@@ -1,0 +1,158 @@
+* {
+  box-sizing: Border-box;
+}
+body {
+  font-family: sans-serif;
+  font-weight: 100;
+  color: #333;
+  margin: 0;
+}
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+  font-weight: 100;
+}
+h1 {
+  font-size: 46px;
+}
+h2 {
+  font-size: 32px;
+}
+h3 {
+  font-size: 28px;
+}
+p {
+  font-size: 18px;
+  line-height: 26px;
+}
+div.full {
+  margin: 0;
+  padding: 100px 0;
+}
+div.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  height: auto;
+}
+div.directions {
+  color: #333;
+  text-align: center;
+  margin-bottom: -90px;
+  margin-top: 100px;
+}
+a.button {
+  border-radius: 10px;
+  background-color: #666;
+  padding: 25px;
+  color: white;
+  display: block;
+  max-width: 360px;
+  text-transform: uppercase;
+}
+div.full.nav {
+  background-color: #666;
+  color: white;
+  overflow: hidden;
+  padding: 5px;
+}
+div.full.nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+div.full.nav p {
+  float: left;
+  margin: 0;
+}
+div.full.nav nav {
+  float: right;
+}
+div.full.nav nav ul {
+  margin: 0;
+  padding: 0;
+}
+div.full.nav nav ul li {
+  display: inline-block;
+  margin-left: 30px;
+}
+div.full.nav nav ul li a {
+  font-size: 18px;
+  line-height: 26px;
+}
+div.full.hero {
+  text-align: center;
+  background-color: #aaa;
+  color: white;
+}
+div.full.hero h3 {
+  color: #333;
+}
+div.full.location {
+  background-color: #eee;
+}
+div.full.location div.location-title {
+  padding: 25px;
+  border-bottom: solid 1px #333;
+}
+div.full.location div.location-title h1,
+div.full.location div.location-title h3 {
+  margin: 0;
+}
+div.full.location div.location-details {
+  padding: 50px 25px;
+}
+div.full.location div.location-details p {
+  margin: 50px 0;
+}
+div.full.about {
+  background-color: #888;
+  color: white;
+}
+div.controls {
+  text-align: justify;
+}
+div.controls a.category {
+  text-align: left;
+  display: inline-block;
+  width: 23%;
+  margin: 0;
+  background-color: #fff;
+  border: solid 1px #333;
+  color: #333;
+}
+div.controls a.category img {
+  padding-right: 5px;
+  border-right: solid 1px #333;
+}
+div.controls a.category.active {
+  background-color: #888;
+}
+div.controls:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+div.student-list {
+  text-align: justify;
+  font-size: 0.1px;
+  /*hide whitespace between elements*/
+
+  margin-top: 25px;
+}
+div.student-list img.student {
+  display: inline-block;
+  width: 15%;
+  margin-bottom: 15px;
+}
+div.student-list img.break {
+  width: 100%;
+  height: 0;
+}
+div.student-list:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
