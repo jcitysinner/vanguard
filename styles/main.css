@@ -26,13 +26,18 @@ p {
   font-size: 18px;
   line-height: 26px;
 }
+@media (min-width: 320px) and (max-width: 600px) {
+  p {
+    font-size: 16px;
+  }
+}
 div.full {
   margin: 0;
   padding: 100px 0;
 }
 div.container {
   max-width: 1170px;
-  width: 100%;
+  width: 98%;
   margin: 0 auto;
   position: relative;
   height: auto;
@@ -82,6 +87,11 @@ div.full.nav nav ul li a {
   font-size: 18px;
   line-height: 26px;
 }
+@media (min-width: 320px) and (max-width: 600px) {
+  div.full.nav nav ul li a {
+    font-size: 16px;
+  }
+}
 div.full.hero {
   text-align: center;
   background-color: #aaa;
@@ -118,10 +128,22 @@ div.controls a.category {
   text-align: left;
   display: inline-block;
   width: 23%;
-  margin: 0;
+  margin: 0px;
   background-color: #fff;
   border: solid 1px #333;
   color: #333;
+}
+@media (min-width: 320px) and (max-width: 600px) {
+  div.controls a.category {
+    min-width: 100%;
+    margin: 3px auto;
+  }
+}
+@media (min-width: 601px) and (max-width: 860px) {
+  div.controls a.category {
+    min-width: 49.5%;
+    margin: 3px 0px;
+  }
 }
 div.controls a.category img {
   padding-right: 5px;
@@ -133,19 +155,22 @@ div.controls a.category.active {
 div.controls:after {
   content: '';
   display: inline-block;
-  width: 100%;
 }
 div.student-list {
   text-align: justify;
   font-size: 0.1px;
   /*hide whitespace between elements*/
-
   margin-top: 25px;
 }
 div.student-list img.student {
   display: inline-block;
   width: 15%;
   margin-bottom: 15px;
+}
+@media (min-width: 320px) and (max-width: 600px) {
+  div.student-list img.student {
+    width: 44%;
+  }
 }
 div.student-list img.break {
   width: 100%;
