@@ -1,3 +1,11 @@
+@font-face {
+  font-family: intro;
+  src: url('../fonts/intro.otf');
+}
+@font-face {
+  font-family: futura;
+  src: url('../fonts/Futura-CondensedMedium.ttf');
+}
 * {
   box-sizing: Border-box;
 }
@@ -28,7 +36,7 @@ p {
 }
 div.full {
   margin: 0;
-  padding: 100px 0;
+  padding: 70px 0;
 }
 div.container {
   max-width: 1170px;
@@ -53,19 +61,25 @@ a.button {
   text-transform: uppercase;
 }
 div.full.nav {
-  background-color: #666;
+  background-color: #232f44;
   color: white;
   overflow: hidden;
-  padding: 5px;
+  padding: 15px 0 10px;
+  font-family: intro;
+  font-size: 18px;
 }
 div.full.nav a {
-  color: white;
+  color: #efb754;
   text-decoration: none;
   text-transform: uppercase;
 }
 div.full.nav p {
   float: left;
   margin: 0;
+  line-height: 18px;
+}
+div.full.nav p a {
+  color: white;
 }
 div.full.nav nav {
   float: right;
@@ -77,18 +91,43 @@ div.full.nav nav ul {
 div.full.nav nav ul li {
   display: inline-block;
   margin-left: 30px;
+  line-height: 18px;
 }
 div.full.nav nav ul li a {
   font-size: 18px;
-  line-height: 26px;
 }
 div.full.hero {
   text-align: center;
   background-color: #aaa;
+  background-image: url('../images/heroBG.jpg');
+  background-size: cover;
+  background-position: center;
   color: white;
 }
+div.full.hero img.logo {
+  margin-bottom: 30px;
+}
+div.full.hero h1 {
+  color: #efb754;
+  font-size: 45pt;
+  margin: 0;
+  font-family: intro;
+}
+div.full.hero h2 {
+  color: #7699b3;
+  margin: 0;
+  font-size: 26pt;
+  font-family: futura;
+}
 div.full.hero h3 {
-  color: #333;
+  color: #232f44;
+  font-size: 45pt;
+  margin-top: 10px;
+  font-family: futura;
+}
+div.full.hero div.headers {
+  background-color: rgba(35, 47, 68, 0.75);
+  padding: 20px;
 }
 div.full.location {
   background-color: #eee;
