@@ -51,10 +51,16 @@ div.container {
   height: auto;
 }
 div.directions {
-  color: #333;
+  color: #232f44;
   text-align: center;
   margin-bottom: -90px;
   margin-top: 100px;
+  font-family: intro;
+  text-transform: uppercase;
+  font-size: 14pt;
+}
+div.directions img {
+  margin-bottom: -10px;
 }
 a.button {
   border-radius: 10px;
@@ -64,6 +70,15 @@ a.button {
   display: block;
   max-width: 360px;
   text-transform: uppercase;
+}
+a.button.arrow-right {
+  background-color: #f5941e;
+  background-image: url('../images/arrow-right.png');
+  background-position: 90% 50%;
+  background-repeat: no-repeat;
+}
+a.button.arrow-right:hover {
+  background-color: #ff8c00;
 }
 div.full.nav {
   background-color: #232f44;
@@ -120,14 +135,15 @@ div.full.hero img.logo {
 }
 div.full.hero h1 {
   color: #efb754;
-  font-size: 45pt;
+  font-size: 52pt;
   margin: 0;
   font-family: intro;
+  text-shadow: #232f44 5px 5px;
 }
 div.full.hero h2 {
   color: #7699b3;
   margin: 0;
-  font-size: 26pt;
+  font-size: 22pt;
   font-family: futura;
 }
 div.full.hero h3 {
@@ -145,14 +161,31 @@ div.full.location {
 }
 div.full.location div.location-title {
   padding: 25px;
-  border-bottom: solid 1px #333;
+  border-bottom: solid 1px #243045;
 }
 div.full.location div.location-title h1,
 div.full.location div.location-title h3 {
   margin: 0;
 }
+div.full.location div.location-title h1 {
+  font-size: 42pt;
+  color: #243045;
+  font-family: intro;
+}
+div.full.location div.location-title h3 {
+  font-size: 32px;
+  color: #7699b3;
+  font-family: futura;
+}
 div.full.location div.location-details {
   padding: 50px 25px;
+  font-family: futura;
+}
+div.full.location div.location-details h2 {
+  font-size: 28px;
+}
+div.full.location div.location-details h3 {
+  font-size: 24px;
 }
 div.full.location div.location-details p {
   margin: 50px 0;
@@ -195,6 +228,7 @@ div.controls a.category.active {
 div.controls:after {
   content: '';
   display: inline-block;
+  width: 100%;
 }
 div.student-list {
   text-align: justify;
