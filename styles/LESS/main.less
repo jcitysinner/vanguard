@@ -39,6 +39,10 @@ h3{
 }
 
 p{
+
+	@media (min-width: 320px) and (max-width: 600px) { 
+		font-size: 16px;
+	}
 	font-size: 18px;
 	line-height: 26px;
 }
@@ -53,10 +57,10 @@ div.full{
 
 div.container{
 	max-width: 1170px;
-	width: 100%;
+	width: 98%;
 	margin: 0 auto;
 	position: relative;
-	height: auto
+	height: auto;
 }
 
 div.directions{
@@ -111,6 +115,11 @@ div.full.nav{
 				line-height: 18px;
 				a{
 					font-size: 18px;
+					line-height: 26px;
+
+					@media (min-width: 320px) and (max-width: 600px) { 
+						font-size: 16px;
+					} 
 				}
 			}
 		}
@@ -190,10 +199,19 @@ div.controls{
 		text-align: left;
 		display: inline-block;
 		width:23%;
-		margin: 0;
+		margin: 0px;
 		background-color: #fff;
 		border: solid 1px #333;
 		color: #333;
+		@media (min-width: 320px) and (max-width: 600px) { 
+			min-width: 100%;
+			margin: 3px auto;
+		}
+
+		@media (min-width: 601px) and (max-width: 860px) {
+			min-width: 49.5%;
+			margin: 3px 0px;
+		}
 		img{
 			padding-right: 5px;
 			border-right: solid 1px #333;
@@ -206,7 +224,6 @@ div.controls{
 div.controls:after{
 	content: '';
     display: inline-block;
-    width: 100%;
 }
 div.student-list{
 	text-align: justify;
@@ -216,6 +233,9 @@ div.student-list{
 		display: inline-block;
     	width: 15%;
     	margin-bottom: 15px;
+    	@media (min-width: 320px) and (max-width: 600px) { 
+			width: 44%;
+		}
 	}
 	img.break{
 		width: 100%;
