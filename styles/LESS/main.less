@@ -122,15 +122,16 @@ div.full.nav{
 		float: left;
 		margin: 0;
 		line-height: 18px;
+		font-size: 18px;
 		a{
 			color: white;
 		}
 
 		@media (min-width: 320px) and (max-width: 600px) { 
-			font-size: 16px;
 			width: 100%;
 			text-align: center;
 			float: none;
+			font-size: 16px;
 		} 
 	}
 	nav{
@@ -149,13 +150,28 @@ div.full.nav{
 				display: inline-block;
 				margin-left: 30px;
 				line-height: 18px;
+
+				@media (min-width: 320px) and (max-width: 600px) {
+
+					margin: 0;
+
+					&:nth-child(2) {
+						margin: 0 15px;
+					}
+
+				}
+
 				a{
 					font-size: 18px;
 					line-height: 18px;
 
-					@media (min-width: 320px) and (max-width: 600px) { 
-						font-size: 14px;
-					} 
+					@media (min-width: 320px) and (max-width: 600px) {
+
+						font-size: 16px;
+
+					}	
+
+
 				}
 			}
 		}
@@ -181,15 +197,27 @@ div.full.hero{
 	h1{
 		color: #efb754;
 		font-size: 52pt;
+		line-height: 60pt;
 		margin: 0;
 		font-family: intro;
 		text-shadow: #232f44 5px 5px;
+
+		@media (min-width: 320px) and (max-width: 600px) { 
+			font-size: 32pt;
+			line-height: 42pt;
+			text-shadow: #232f44 3px 3px;
+		} 
 	}
 	h2{
 		color: #7699b3;
 		margin: 0;
 		font-size: 22pt;
 		font-family: futura;
+
+		@media (min-width: 320px) and (max-width: 600px) { 
+			font-size: 16pt;
+			line-height: 28pt;
+		} 
 	}
 
 	h3{
@@ -197,6 +225,11 @@ div.full.hero{
 		font-size: 45pt;
 		margin-top: 10px;
 		font-family: futura;
+
+		@media (min-width: 320px) and (max-width: 600px) { 
+			font-size: 26pt;
+			line-height: 36pt;
+		} 
 	}
 
 	div.headers{

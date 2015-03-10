@@ -101,16 +101,17 @@ div.full.nav p {
   float: left;
   margin: 0;
   line-height: 18px;
+  font-size: 18px;
 }
 div.full.nav p a {
   color: white;
 }
 @media (min-width: 320px) and (max-width: 600px) {
   div.full.nav p {
-    font-size: 16px;
     width: 100%;
     text-align: center;
     float: none;
+    font-size: 16px;
   }
 }
 div.full.nav nav {
@@ -133,13 +134,21 @@ div.full.nav nav ul li {
   margin-left: 30px;
   line-height: 18px;
 }
+@media (min-width: 320px) and (max-width: 600px) {
+  div.full.nav nav ul li {
+    margin: 0;
+  }
+  div.full.nav nav ul li:nth-child(2) {
+    margin: 0 15px;
+  }
+}
 div.full.nav nav ul li a {
   font-size: 18px;
   line-height: 18px;
 }
 @media (min-width: 320px) and (max-width: 600px) {
   div.full.nav nav ul li a {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 div.full.hero {
@@ -156,9 +165,17 @@ div.full.hero img.logo {
 div.full.hero h1 {
   color: #efb754;
   font-size: 52pt;
+  line-height: 60pt;
   margin: 0;
   font-family: intro;
   text-shadow: #232f44 5px 5px;
+}
+@media (min-width: 320px) and (max-width: 600px) {
+  div.full.hero h1 {
+    font-size: 32pt;
+    line-height: 42pt;
+    text-shadow: #232f44 3px 3px;
+  }
 }
 div.full.hero h2 {
   color: #7699b3;
@@ -166,11 +183,23 @@ div.full.hero h2 {
   font-size: 22pt;
   font-family: futura;
 }
+@media (min-width: 320px) and (max-width: 600px) {
+  div.full.hero h2 {
+    font-size: 16pt;
+    line-height: 28pt;
+  }
+}
 div.full.hero h3 {
   color: #232f44;
   font-size: 45pt;
   margin-top: 10px;
   font-family: futura;
+}
+@media (min-width: 320px) and (max-width: 600px) {
+  div.full.hero h3 {
+    font-size: 26pt;
+    line-height: 36pt;
+  }
 }
 div.full.hero div.headers {
   background-color: rgba(35, 47, 68, 0.75);
