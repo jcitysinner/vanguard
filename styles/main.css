@@ -105,8 +105,24 @@ div.full.nav p {
 div.full.nav p a {
   color: white;
 }
+@media (min-width: 320px) and (max-width: 600px) {
+  div.full.nav p {
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    float: none;
+  }
+}
 div.full.nav nav {
   float: right;
+}
+@media (min-width: 320px) and (max-width: 600px) {
+  div.full.nav nav {
+    width: 100%;
+    float: none;
+    text-align: center;
+    margin-top: 10px;
+  }
 }
 div.full.nav nav ul {
   margin: 0;
@@ -119,11 +135,11 @@ div.full.nav nav ul li {
 }
 div.full.nav nav ul li a {
   font-size: 18px;
-  line-height: 26px;
+  line-height: 18px;
 }
 @media (min-width: 320px) and (max-width: 600px) {
   div.full.nav nav ul li a {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 div.full.hero {
