@@ -54,13 +54,16 @@ div.directions {
   color: #232f44;
   text-align: center;
   margin-bottom: -90px;
-  margin-top: 100px;
+  margin-top: 50px;
   font-family: intro;
   text-transform: uppercase;
   font-size: 14pt;
 }
 div.directions img {
   margin-bottom: -10px;
+}
+div.directions p.light {
+  color: white;
 }
 a.button {
   border-radius: 10px;
@@ -76,6 +79,7 @@ a.button.arrow-right {
   background-image: url('../images/arrow-right.png');
   background-position: 90% 50%;
   background-repeat: no-repeat;
+  text-decoration: none;
 }
 a.button.arrow-right:hover {
   background-color: #ff8c00;
@@ -157,11 +161,13 @@ div.full.hero div.headers {
   padding: 20px;
 }
 div.full.location {
-  background-color: #eee;
+  background-image: url('../images/map-bg.jpg');
+  background-size: cover;
+  background-position: bottom right;
 }
 div.full.location div.location-title {
   padding: 25px;
-  border-bottom: solid 1px #243045;
+  border-bottom: solid 1px #7699b3;
 }
 div.full.location div.location-title h1,
 div.full.location div.location-title h3 {
@@ -169,7 +175,7 @@ div.full.location div.location-title h3 {
 }
 div.full.location div.location-title h1 {
   font-size: 42pt;
-  color: #243045;
+  color: white;
   font-family: intro;
 }
 div.full.location div.location-title h3 {
@@ -180,6 +186,7 @@ div.full.location div.location-title h3 {
 div.full.location div.location-details {
   padding: 50px 25px;
   font-family: futura;
+  color: white;
 }
 div.full.location div.location-details h2 {
   font-size: 28px;
